@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C043F4F81ABD32E8004D1FB6 /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043F4F71ABD32E8004D1FB6 /* GPX.swift */; };
+		C043F4FA1ABD9D95004D1FB6 /* MKGPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */; };
+		C043F4FC1ABDAF3A004D1FB6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043F4FB1ABDAF3A004D1FB6 /* ImageViewController.swift */; };
 		C04E67961ABC57A3001C11C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E67951ABC57A3001C11C8 /* AppDelegate.swift */; };
-		C04E67981ABC57A3001C11C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E67971ABC57A3001C11C8 /* ViewController.swift */; };
+		C04E67981ABC57A3001C11C8 /* GPXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E67971ABC57A3001C11C8 /* GPXViewController.swift */; };
 		C04E679B1ABC57A3001C11C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04E67991ABC57A3001C11C8 /* Main.storyboard */; };
 		C04E679D1ABC57A3001C11C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04E679C1ABC57A3001C11C8 /* Images.xcassets */; };
 		C04E67A01ABC57A3001C11C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04E679E1ABC57A3001C11C8 /* LaunchScreen.xib */; };
@@ -26,10 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C043F4F71ABD32E8004D1FB6 /* GPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
+		C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGPX.swift; sourceTree = "<group>"; };
+		C043F4FB1ABDAF3A004D1FB6 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		C043F4FD1ABDB70B004D1FB6 /* hangzhou.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = hangzhou.gpx; sourceTree = "<group>"; };
 		C04E67901ABC57A3001C11C8 /* Trax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04E67941ABC57A3001C11C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C04E67951ABC57A3001C11C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C04E67971ABC57A3001C11C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C04E67971ABC57A3001C11C8 /* GPXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXViewController.swift; sourceTree = "<group>"; };
 		C04E679A1ABC57A3001C11C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C04E679C1ABC57A3001C11C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C04E679F1ABC57A3001C11C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -78,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				C04E67951ABC57A3001C11C8 /* AppDelegate.swift */,
-				C04E67971ABC57A3001C11C8 /* ViewController.swift */,
+				C04E67971ABC57A3001C11C8 /* GPXViewController.swift */,
+				C043F4FD1ABDB70B004D1FB6 /* hangzhou.gpx */,
+				C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */,
+				C043F4FB1ABDAF3A004D1FB6 /* ImageViewController.swift */,
 				C04E67991ABC57A3001C11C8 /* Main.storyboard */,
 				C04E67931ABC57A3001C11C8 /* Supporting Files */,
 			);
@@ -91,6 +101,7 @@
 				C04E679E1ABC57A3001C11C8 /* LaunchScreen.xib */,
 				C04E679C1ABC57A3001C11C8 /* Images.xcassets */,
 				C04E67941ABC57A3001C11C8 /* Info.plist */,
+				C043F4F71ABD32E8004D1FB6 /* GPX.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,8 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C04E67981ABC57A3001C11C8 /* ViewController.swift in Sources */,
+				C04E67981ABC57A3001C11C8 /* GPXViewController.swift in Sources */,
+				C043F4FA1ABD9D95004D1FB6 /* MKGPX.swift in Sources */,
+				C043F4FC1ABDAF3A004D1FB6 /* ImageViewController.swift in Sources */,
 				C04E67961ABC57A3001C11C8 /* AppDelegate.swift in Sources */,
+				C043F4F81ABD32E8004D1FB6 /* GPX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +421,7 @@
 				C04E67B11ABC57A3001C11C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C04E67B21ABC57A3001C11C8 /* Build configuration list for PBXNativeTarget "TraxTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				C04E67B41ABC57A3001C11C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
