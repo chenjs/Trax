@@ -10,6 +10,7 @@
 		C0082E1A1AC628B7004FDDE0 /* Vacation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C0082E191AC628B7004FDDE0 /* Vacation.gpx */; };
 		C0082E1D1AC67E14004FDDE0 /* WaypointImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0082E1C1AC67E14004FDDE0 /* WaypointImageViewController.swift */; };
 		C0082E1F1AC67FF3004FDDE0 /* SimpleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0082E1E1AC67FF3004FDDE0 /* SimpleMapViewController.swift */; };
+		C0082E211AC685BC004FDDE0 /* Hangzhou.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C0082E201AC685BC004FDDE0 /* Hangzhou.gpx */; };
 		C01A37461AC1926100D19E7B /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A37451AC1926100D19E7B /* GPX.swift */; };
 		C01A37481AC1985300D19E7B /* EditWaypointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A37471AC1985300D19E7B /* EditWaypointViewController.swift */; };
 		C043F4FA1ABD9D95004D1FB6 /* MKGPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */; };
@@ -36,6 +37,7 @@
 		C0082E191AC628B7004FDDE0 /* Vacation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vacation.gpx; sourceTree = "<group>"; };
 		C0082E1C1AC67E14004FDDE0 /* WaypointImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaypointImageViewController.swift; sourceTree = "<group>"; };
 		C0082E1E1AC67FF3004FDDE0 /* SimpleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMapViewController.swift; sourceTree = "<group>"; };
+		C0082E201AC685BC004FDDE0 /* Hangzhou.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hangzhou.gpx; sourceTree = "<group>"; };
 		C01A37451AC1926100D19E7B /* GPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
 		C01A37471AC1985300D19E7B /* EditWaypointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWaypointViewController.swift; sourceTree = "<group>"; };
 		C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGPX.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		C04E67931ABC57A3001C11C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0082E201AC685BC004FDDE0 /* Hangzhou.gpx */,
 				C0082E191AC628B7004FDDE0 /* Vacation.gpx */,
 				C01A37451AC1926100D19E7B /* GPX.swift */,
 				C04E679E1ABC57A3001C11C8 /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 				C04E67A01ABC57A3001C11C8 /* LaunchScreen.xib in Resources */,
 				C0082E1A1AC628B7004FDDE0 /* Vacation.gpx in Resources */,
 				C04E679D1ABC57A3001C11C8 /* Images.xcassets in Resources */,
+				C0082E211AC685BC004FDDE0 /* Hangzhou.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
