@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VPb-Ap-Fg3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VPb-Ap-Fg3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -23,11 +23,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-1k-ZMb">
-                                <rect key="frame" x="70" y="66" width="514" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHc-6b-9J3">
                                 <rect key="frame" x="16" y="31" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -39,21 +34,50 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-cd-KTw" userLabel="imageViewContainer">
+                                <rect key="frame" x="16" y="104" width="568" height="488"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnB-Vm-Y4T">
+                                <rect key="frame" x="552" y="65" width="32" height="32"/>
+                                <state key="normal" image="camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto" destination="9EC-Sc-qds" eventType="touchUpInside" id="qua-EJ-bxw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-1k-ZMb">
+                                <rect key="frame" x="70" y="66" width="474" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ptM-1k-ZMb" firstAttribute="trailing" secondItem="qew-9C-DuP" secondAttribute="trailingMargin" id="0nL-fD-zaE"/>
                             <constraint firstItem="4aL-pz-DYI" firstAttribute="leading" secondItem="ptM-1k-ZMb" secondAttribute="leading" id="3Mi-pq-Fh7"/>
                             <constraint firstItem="ptM-1k-ZMb" firstAttribute="baseline" secondItem="GVd-lw-jy9" secondAttribute="baseline" id="BGA-js-v9Q"/>
                             <constraint firstItem="4aL-pz-DYI" firstAttribute="trailing" secondItem="qew-9C-DuP" secondAttribute="trailingMargin" id="BKx-Xf-nUX"/>
+                            <constraint firstItem="rnB-Vm-Y4T" firstAttribute="centerY" secondItem="ptM-1k-ZMb" secondAttribute="centerY" id="BkN-cl-Vm7"/>
+                            <constraint firstItem="E2F-cd-KTw" firstAttribute="top" secondItem="ptM-1k-ZMb" secondAttribute="bottom" constant="8" symbolic="YES" id="EXu-d3-gwH"/>
                             <constraint firstItem="4aL-pz-DYI" firstAttribute="leading" secondItem="WHc-6b-9J3" secondAttribute="trailing" constant="8" symbolic="YES" id="Kym-45-M6r"/>
                             <constraint firstItem="WHc-6b-9J3" firstAttribute="leading" secondItem="qew-9C-DuP" secondAttribute="leadingMargin" id="PdE-dl-x3B"/>
+                            <constraint firstItem="s6V-xB-JoL" firstAttribute="top" secondItem="E2F-cd-KTw" secondAttribute="bottom" constant="8" symbolic="YES" id="SYz-rh-dvk"/>
                             <constraint firstItem="ptM-1k-ZMb" firstAttribute="top" secondItem="4aL-pz-DYI" secondAttribute="bottom" constant="8" symbolic="YES" id="UFb-IO-q0K"/>
                             <constraint firstItem="s6V-xB-JoL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ptM-1k-ZMb" secondAttribute="bottom" constant="8" symbolic="YES" id="WDP-Vm-I7z"/>
+                            <constraint firstItem="rnB-Vm-Y4T" firstAttribute="trailing" secondItem="qew-9C-DuP" secondAttribute="trailingMargin" id="dnl-2M-eRj"/>
                             <constraint firstItem="ptM-1k-ZMb" firstAttribute="leading" secondItem="GVd-lw-jy9" secondAttribute="trailing" constant="8" symbolic="YES" id="drR-5l-niF"/>
+                            <constraint firstItem="E2F-cd-KTw" firstAttribute="trailing" secondItem="qew-9C-DuP" secondAttribute="trailingMargin" id="iRC-rq-Lno"/>
                             <constraint firstItem="4aL-pz-DYI" firstAttribute="top" secondItem="TL2-hv-70x" secondAttribute="bottom" constant="8" symbolic="YES" id="j7D-9m-zah"/>
+                            <constraint firstItem="rnB-Vm-Y4T" firstAttribute="leading" secondItem="ptM-1k-ZMb" secondAttribute="trailing" constant="8" symbolic="YES" id="jUC-Rb-2v4"/>
+                            <constraint firstItem="E2F-cd-KTw" firstAttribute="leading" secondItem="qew-9C-DuP" secondAttribute="leadingMargin" id="m4R-fa-LZE"/>
                             <constraint firstItem="WHc-6b-9J3" firstAttribute="baseline" secondItem="4aL-pz-DYI" secondAttribute="baseline" id="mFw-dd-o6V"/>
                             <constraint firstItem="GVd-lw-jy9" firstAttribute="leading" secondItem="qew-9C-DuP" secondAttribute="leadingMargin" id="tGs-LS-27O"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0nL-fD-zaE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="0Td-fA-9g9">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Ad9-Od-TXQ">
@@ -68,6 +92,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageViewContainer" destination="E2F-cd-KTw" id="0S6-vY-qbz"/>
                         <outlet property="infoTextField" destination="ptM-1k-ZMb" id="Yab-hO-r3k"/>
                         <outlet property="nameTextField" destination="4aL-pz-DYI" id="Z6Y-RE-n0h"/>
                     </connections>
@@ -122,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="851" y="393"/>
         </scene>
-        <!--Image View Controller-->
+        <!--Waypoint Image View Controller-->
         <scene sceneID="kWE-vB-f1N">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CEP-cx-Xa8" customClass="ImageViewController" customModule="Trax" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CEP-cx-Xa8" customClass="WaypointImageViewController" customModule="Trax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hvu-7h-Q2S"/>
                         <viewControllerLayoutGuide type="bottom" id="UYS-Gz-bWU"/>
@@ -140,11 +165,23 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Mk0-Jb-znA">
                                 <rect key="frame" x="290" y="290" width="37" height="37"/>
                             </activityIndicatorView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otM-KJ-Q5p">
+                                <rect key="frame" x="434" y="442" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4YH-At-3H1"/>
+                                    <constraint firstAttribute="height" constant="150" id="UDv-0m-dCJ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="t9q-Me-7fg" kind="embed" identifier="Embed Segue" id="7qf-5W-fpM"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UYS-Gz-bWU" firstAttribute="top" secondItem="otM-KJ-Q5p" secondAttribute="bottom" constant="8" symbolic="YES" id="4qY-Pr-Wc4"/>
                             <constraint firstItem="N4r-G1-h91" firstAttribute="leading" secondItem="ybw-dz-Wv4" secondAttribute="leading" id="8ef-eh-5cf"/>
                             <constraint firstItem="N4r-G1-h91" firstAttribute="top" secondItem="ybw-dz-Wv4" secondAttribute="top" id="ODR-zX-ARI"/>
+                            <constraint firstItem="otM-KJ-Q5p" firstAttribute="trailing" secondItem="ybw-dz-Wv4" secondAttribute="trailingMargin" id="PvM-0Z-Qfr"/>
                             <constraint firstAttribute="bottom" secondItem="N4r-G1-h91" secondAttribute="bottom" id="Su2-2f-sfL"/>
                             <constraint firstAttribute="centerX" secondItem="Mk0-Jb-znA" secondAttribute="centerX" constant="-8.5" id="Xbk-zV-dd0"/>
                             <constraint firstAttribute="centerY" secondItem="Mk0-Jb-znA" secondAttribute="centerY" constant="-8.5" id="ZTL-Dd-MNE"/>
@@ -178,5 +215,41 @@
             </objects>
             <point key="canvasLocation" x="39" y="393"/>
         </scene>
+        <!--Simple Map View Controller-->
+        <scene sceneID="OwR-DZ-e4a">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="t9q-Me-7fg" customClass="SimpleMapViewController" customModule="Trax" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ev-bD-y3V"/>
+                        <viewControllerLayoutGuide type="bottom" id="N72-EX-RG6"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3U9-g4-e1w">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qys-m0-d3y">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qys-m0-d3y" firstAttribute="leading" secondItem="3U9-g4-e1w" secondAttribute="leading" id="8Jg-ba-dh4"/>
+                            <constraint firstItem="qys-m0-d3y" firstAttribute="bottom" secondItem="N72-EX-RG6" secondAttribute="top" id="fLR-C4-o63"/>
+                            <constraint firstAttribute="trailing" secondItem="qys-m0-d3y" secondAttribute="trailing" id="h9p-Bh-9Wj"/>
+                            <constraint firstItem="qys-m0-d3y" firstAttribute="top" secondItem="2ev-bD-y3V" secondAttribute="bottom" id="mTJ-7u-eJo"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="mapView" destination="qys-m0-d3y" id="SUT-oN-XFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPe-2l-pKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="329"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="32" height="32"/>
+    </resources>
 </document>

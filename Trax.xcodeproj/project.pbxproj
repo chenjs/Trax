@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0082E1A1AC628B7004FDDE0 /* Vacation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C0082E191AC628B7004FDDE0 /* Vacation.gpx */; };
+		C0082E1B1AC62D12004FDDE0 /* Hangzhou.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C043F4FD1ABDB70B004D1FB6 /* Hangzhou.gpx */; };
+		C0082E1D1AC67E14004FDDE0 /* WaypointImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0082E1C1AC67E14004FDDE0 /* WaypointImageViewController.swift */; };
+		C0082E1F1AC67FF3004FDDE0 /* SimpleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0082E1E1AC67FF3004FDDE0 /* SimpleMapViewController.swift */; };
 		C01A37461AC1926100D19E7B /* GPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A37451AC1926100D19E7B /* GPX.swift */; };
 		C01A37481AC1985300D19E7B /* EditWaypointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A37471AC1985300D19E7B /* EditWaypointViewController.swift */; };
 		C043F4FA1ABD9D95004D1FB6 /* MKGPX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */; };
@@ -30,11 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0082E191AC628B7004FDDE0 /* Vacation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vacation.gpx; sourceTree = "<group>"; };
+		C0082E1C1AC67E14004FDDE0 /* WaypointImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaypointImageViewController.swift; sourceTree = "<group>"; };
+		C0082E1E1AC67FF3004FDDE0 /* SimpleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleMapViewController.swift; sourceTree = "<group>"; };
 		C01A37451AC1926100D19E7B /* GPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPX.swift; sourceTree = "<group>"; };
 		C01A37471AC1985300D19E7B /* EditWaypointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditWaypointViewController.swift; sourceTree = "<group>"; };
 		C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGPX.swift; sourceTree = "<group>"; };
 		C043F4FB1ABDAF3A004D1FB6 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		C043F4FD1ABDB70B004D1FB6 /* hangzhou.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = hangzhou.gpx; sourceTree = "<group>"; };
+		C043F4FD1ABDB70B004D1FB6 /* Hangzhou.gpx */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hangzhou.gpx; sourceTree = "<group>"; };
 		C04E67901ABC57A3001C11C8 /* Trax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04E67941ABC57A3001C11C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C04E67951ABC57A3001C11C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,10 +95,11 @@
 			children = (
 				C04E67951ABC57A3001C11C8 /* AppDelegate.swift */,
 				C04E67971ABC57A3001C11C8 /* GPXViewController.swift */,
-				C043F4FD1ABDB70B004D1FB6 /* hangzhou.gpx */,
 				C043F4F91ABD9D95004D1FB6 /* MKGPX.swift */,
 				C043F4FB1ABDAF3A004D1FB6 /* ImageViewController.swift */,
 				C01A37471AC1985300D19E7B /* EditWaypointViewController.swift */,
+				C0082E1C1AC67E14004FDDE0 /* WaypointImageViewController.swift */,
+				C0082E1E1AC67FF3004FDDE0 /* SimpleMapViewController.swift */,
 				C04E67991ABC57A3001C11C8 /* Main.storyboard */,
 				C04E67931ABC57A3001C11C8 /* Supporting Files */,
 			);
@@ -101,6 +109,8 @@
 		C04E67931ABC57A3001C11C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C043F4FD1ABDB70B004D1FB6 /* Hangzhou.gpx */,
+				C0082E191AC628B7004FDDE0 /* Vacation.gpx */,
 				C01A37451AC1926100D19E7B /* GPX.swift */,
 				C04E679E1ABC57A3001C11C8 /* LaunchScreen.xib */,
 				C04E679C1ABC57A3001C11C8 /* Images.xcassets */,
@@ -206,8 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0082E1B1AC62D12004FDDE0 /* Hangzhou.gpx in Resources */,
 				C04E679B1ABC57A3001C11C8 /* Main.storyboard in Resources */,
 				C04E67A01ABC57A3001C11C8 /* LaunchScreen.xib in Resources */,
+				C0082E1A1AC628B7004FDDE0 /* Vacation.gpx in Resources */,
 				C04E679D1ABC57A3001C11C8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,11 +239,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C04E67981ABC57A3001C11C8 /* GPXViewController.swift in Sources */,
+				C0082E1D1AC67E14004FDDE0 /* WaypointImageViewController.swift in Sources */,
 				C043F4FA1ABD9D95004D1FB6 /* MKGPX.swift in Sources */,
 				C01A37481AC1985300D19E7B /* EditWaypointViewController.swift in Sources */,
 				C043F4FC1ABDAF3A004D1FB6 /* ImageViewController.swift in Sources */,
 				C04E67961ABC57A3001C11C8 /* AppDelegate.swift in Sources */,
 				C01A37461AC1926100D19E7B /* GPX.swift in Sources */,
+				C0082E1F1AC67FF3004FDDE0 /* SimpleMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
